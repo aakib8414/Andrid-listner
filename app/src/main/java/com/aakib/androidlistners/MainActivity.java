@@ -7,7 +7,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView tvFist, tvWay1, tvSecond, tvWay2, tvThird, tvWay3;
 
@@ -36,5 +36,19 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Khan", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.second:
+                Toast.makeText(this, "raza", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.way2:
+                Toast.makeText(this, "Khan", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                break;
+        }
     }
 }
