@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvSecond = findViewById(R.id.second);
         tvWay2 = findViewById(R.id.way2);
 
+        tvSecond.setOnClickListener(this);
+        tvWay2.setOnClickListener(this);
+
         tvThird = findViewById(R.id.third);
         tvWay3 = findViewById(R.id.way3);
         tvFist.setOnClickListener(new View.OnClickListener() {
