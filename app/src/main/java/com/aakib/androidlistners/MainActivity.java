@@ -54,4 +54,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
+    public void third(View view) {
+        Toast.makeText(this, "adnan", Toast.LENGTH_SHORT).show();
+    }
+
+    public void way3(View view) {
+        Toast.makeText(this, "khan", Toast.LENGTH_SHORT).show();
+    }
 }
